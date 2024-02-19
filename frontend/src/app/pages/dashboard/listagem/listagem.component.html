@@ -1,3 +1,25 @@
+<div class="legenda">
+  <div class="titulo">
+    Legenda:
+  </div>
+  <div>
+    <i [style.color]="statusEnum.VERDE | statusIcon" class="pi pi-circle-on" style="font-size: 1rem"></i>
+    OK
+  </div>
+  <div>
+    <i [style.color]="statusEnum.AMARELA | statusIcon" class="pi pi-circle-on" style="font-size: 1rem"></i>
+    Falta serviço ou falha de conexão por até 10 minutos
+  </div>
+  <div>
+    <i [style.color]="statusEnum.VERMELHO | statusIcon" class="pi pi-circle-on" style="font-size: 1rem"></i>
+    Falta serviço ou falha de conexão por mais de 10 minutos
+  </div>
+  <div>
+    <i [style.color]="statusEnum.EM_BRANCO | statusIcon" class="pi pi-circle-on" style="font-size: 1rem"></i>
+    O serviço não consta no autorizador
+  </div>
+</div>
+
 <p-table [value]="dataTable">
   <ng-template pTemplate="header">
     <tr>

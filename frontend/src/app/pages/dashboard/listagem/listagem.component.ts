@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Autorizador } from 'src/app/domain/autorizador.model';
 import { Historico } from 'src/app/domain/historico.model';
+import { StatusEnum } from 'src/app/domain/status.enum';
 import { AutorizadorService } from 'src/app/service/autorizador.service';
 
 @Component({
@@ -9,6 +10,7 @@ import { AutorizadorService } from 'src/app/service/autorizador.service';
   styleUrls: ['./listagem.component.sass']
 })
 export class ListagemComponent implements OnInit {
+  statusEnum = StatusEnum;
   dataTable: Historico[];
 
   constructor(private service: AutorizadorService) {}

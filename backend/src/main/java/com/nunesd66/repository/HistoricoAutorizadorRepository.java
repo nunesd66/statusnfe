@@ -47,7 +47,7 @@ public interface HistoricoAutorizadorRepository extends JpaRepository<HistoricoA
                         "WHERE a.id = statusMaisInstavel.autorizador_id " +
                 ") AS autorizador1 " +
                 "WHERE h1.autorizador_id = autorizador1.idAutorizador " +
-                "ORDER BY h1.data_cadastro ASC " +
+                "ORDER BY h1.data_cadastro DESC " +
                 "LIMIT 1;"
             , nativeQuery = true)
     HistoricoAutorizador findByMaxunavailability();
