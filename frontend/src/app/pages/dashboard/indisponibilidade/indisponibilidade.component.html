@@ -1,0 +1,7 @@
+<div class="container">
+  <p>Autorizador: {{nomeAutorizador}} </p>
+  <p>Taxa de disponibilidade: {{taxaDisponibilidade}}% </p>
+  <p>Última Atualização: {{ultimaAtualizacao  | date: 'dd/MM/yyyy HH:mm:ss' }}</p>
+  
+  <p-chart type="doughnut" [data]="data"></p-chart>
+</div>

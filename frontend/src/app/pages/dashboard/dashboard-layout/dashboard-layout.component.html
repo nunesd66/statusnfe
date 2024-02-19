@@ -1,0 +1,23 @@
+<div class="container">
+  <p>{{title}}</p>
+
+  <div style="display: inline-block; vertical-align: top; width: 495px; margin-right: 10px;">
+    <p-card header="Autorizador com maior indisponibilidade de serviço">
+      <app-indisponibilidade></app-indisponibilidade>
+    </p-card>
+  </div>
+
+  <div style="display: inline-block; vertical-align: top; width: 495px; ">
+    <p-card header="Filtro por autorizador">
+      <app-filtro-por-estado></app-filtro-por-estado>
+    </p-card>
+  </div>
+  
+  <p-card header="Visão geral da atual disponibilidade dos serviços dos autorizadores">
+    <app-listagem></app-listagem>
+  </p-card>
+  
+  <p-card header="Histórico dos serviços filtrados por data">
+    <app-filtro-por-data></app-filtro-por-data>
+  </p-card>
+</div>

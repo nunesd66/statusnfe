@@ -1,0 +1,9 @@
+<p-dropdown
+  [options]="autorizadores"
+  placeholder="Selecione um Autorizador"
+  optionLabel="nome"
+  [showClear]="true"
+  (onChange)="search($event?.value)">
+</p-dropdown>
+<p *ngIf="data">Porcentagem da disponibilidade de cada serviço:</p>
+<p-chart *ngIf="data" type="polarArea" [data]="data"></p-chart>

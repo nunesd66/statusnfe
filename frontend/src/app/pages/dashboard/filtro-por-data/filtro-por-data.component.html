@@ -1,0 +1,8 @@
+<div class="container">
+  <p-calendar readonlyInput="true" [(ngModel)]="dataInicial" dateFormat="dd/mm/yy" placeholder="Data inicial"></p-calendar>
+  <p-calendar readonlyInput="true" [(ngModel)]="dataFinal" dateFormat="dd/mm/yy" placeholder="Data final"></p-calendar>
+  <button (click)="search()" pButton pRipple type="button" icon="pi pi-search" class="p-button-rounded"></button>
+  <button (click)="clear()" pButton pRipple type="button" icon="pi pi-times" class="p-button-rounded"></button>
+</div>
+<p-chart *ngIf="data" type="bar" [data]="data"></p-chart>
+
